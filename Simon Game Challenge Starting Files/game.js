@@ -7,12 +7,7 @@ var userClickedPattern = [];
 var started = false;
 var level = 0;
 
-function startOver(){
-    level =0;
-    gamePattern=[];
-    started =false;
-    userClickedPattern=[];
-}
+
 
 $(document).keypress(function() {
   if (!started) {
@@ -93,4 +88,11 @@ function animatePress(currentColor) {
   setTimeout(function () {
     $("#" + currentColor).removeClass("pressed");
   }, 100);
+}
+
+function startOver(){
+    level =0;
+    gamePattern=[];
+    started =false;
+  
 }
