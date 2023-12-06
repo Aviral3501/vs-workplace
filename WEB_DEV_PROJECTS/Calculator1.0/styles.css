@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(to right, #00AAFF ,yellowgreen);
+}
+
+.output{
+    background-color: black;
+}
+
+.calculator{
+    justify-content: center;
+    margin :20% 20% 10% 20%;
+    display:flexbox;
+}
+.previous-operand{
+    color:aliceblue;
+    font-size: smaller;
+    align-items: flex-end;
+}
+.current-operand{
+    color:aliceblue;
+    font-size: maxmin(120px,auto);
+    display: inline-block;
+    align-items: flex-end;
+}
+
+
+.row-first{
+    display:grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.row-fifth{
+    display:grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+.row-4{
+display:grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+}
