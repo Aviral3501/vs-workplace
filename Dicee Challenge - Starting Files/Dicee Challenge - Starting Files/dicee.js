@@ -8,13 +8,13 @@ document.querySelector(".dice .img1").setAttribute("src",images1);
 document.querySelector(".dice .img2").setAttribute("src",images2);
 
 if(randomNumber1===randomNumber2){
-    document.querySelector("h1").textContent= "DRAW";
+    document.querySelector("p").textContent= "DRAW";
 
 }else if(randomNumber1<=randomNumber2){
-    document.querySelector("h1").textContent= "Player 2 Wins";
+    document.querySelector("p").textContent= "Player 2 Wins , Refresh to play again";
 
 }else{
-    document.querySelector("h1").textContent= "Player 1 Wins";
+    document.querySelector("p").textContent= "Player 1 Wins , Refresh to play again";
 
 }
 
